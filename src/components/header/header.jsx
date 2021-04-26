@@ -32,7 +32,7 @@ const Header = () => {
     }
 
     return (
-        <header className="topbar navbarbg" data-navbarbg="skin1">
+        <header className="topbar navbarbg" data-navbarbg="skin1">            
             <Navbar className="top-navbar" dark expand="md">
                 <div className="navbar-header" id="logobg" data-logobg="skin6">
                     {/*--------------------------------------------------------------------------------*/}
@@ -48,14 +48,15 @@ const Header = () => {
                             />
                         </b>
                         <span className="logo-text">
-                            <img src={logodarktext} alt="homepage" className="dark-logo" />
-                            <img
+                            {/* <img src={logodarktext} alt="homepage" className="dark-logo" /> */}
+                            {/* <img
                                 src={logolighttext}
                                 className="light-logo"
                                 alt="homepage"
-                            />
+                            /> */}
                         </span>
                     </NavbarBrand>
+                    
                     {/*--------------------------------------------------------------------------------*/}
                     {/* Mobile View Toggler  [visible only after 768px screen]                         */}
                     {/*--------------------------------------------------------------------------------*/}
@@ -63,8 +64,20 @@ const Header = () => {
                         <i className="ti-menu ti-close" />
                     </button>
                 </div>
+                <div className="ml-auto top-header-nav">
+                            <NavItem>
+                                <a href="link" className="btn  mr-2" style={{ color: "#FFF",backgroundColor: "#56658c", padding: "20px 20px" }}>Explore</a>
+                            </NavItem>
+                            <NavItem>
+                                <a href="link" className="btn mr-2" style={{ color: "#FFF", backgroundColor: "#56658c", padding: "20px 20px" }}>Report</a>
+                            </NavItem>
+                            <NavItem>
+                                <a href="link" className="btn mr-2" style={{ color: "#FFF", backgroundColor: "#56658c", padding: "20px 20px" }}>Audit</a>                                
+                            </NavItem>
+                        </div>
+
                 <Collapse className="navbarbg" navbar data-navbarbg="skin1" >
-                    <Nav className="ml-auto float-right" navbar>
+                    <Nav className="ml-auto" navbar>
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret className="pro-pic">
                                 <img

@@ -20,11 +20,9 @@ const Summary = () => {
     return (
         <div>
             <Row>
-                <Col sm={6} lg={8}>
-                    <SalesSummary />
+                <Col sm={6} lg={8}>                  
                 </Col>
-                <Col sm={6} lg={4}>
-                    <Feeds />
+                <Col sm={6} lg={4}>                    
                 </Col>
             </Row>
         </div>

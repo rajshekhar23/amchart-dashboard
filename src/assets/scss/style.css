@@ -1,25 +1,3 @@
-/*
-Template Name: Admin Template
-Author: Niravjoshi / Wrappixel
-File: scss
-*/
-/**
- * Table Of Content
- *
- *  1. Color system
- *  2. Options
- *  3. Body
- *  4. Typography
- *  5. Breadcrumbs
- *  6. Cards
- *  7. Dropdowns
- *  8. Buttons
- *  9. Typography
- *  10. Progress bars
- *  11. Tables
- *  12. Forms
- *  14. Component
- */
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800");
 /*Theme Colors*/
 /*Topbar Colors*/
@@ -4952,6 +4930,11 @@ input[type="button"].btn-block {
 }
 
 @media (min-width: 768px) {
+    /* .navbarbg .top-header-nav {
+        width: 760px;
+        display: flex;
+        justify-content: center;
+    } */
     .navbar-expand-md {
         flex-flow: row nowrap;
         justify-content: flex-start;
@@ -12656,7 +12639,7 @@ Preloader
 
 #main-wrapper[data-layout='vertical'] .topbar .top-navbar .navbar-header[data-logobg='skin6'],
 #main-wrapper[data-layout='horizontal'] .topbar .top-navbar .navbar-header[data-logobg='skin6'] {
-    background: #2962ff;
+    background: #5b6c9c;
 }
 
 #main-wrapper[data-layout='vertical'] .topbar .top-navbar .navbar-header[data-logobg='skin6'] .navbar-brand .dark-logo,
@@ -12673,14 +12656,14 @@ Preloader
 #main-wrapper[data-layout='vertical'] .topbar .top-navbar .navbar-header[data-logobg='skin6'] .topbartoggler,
 #main-wrapper[data-layout='horizontal'] .topbar .top-navbar .navbar-header[data-logobg='skin6'] .nav-toggler,
 #main-wrapper[data-layout='horizontal'] .topbar .top-navbar .navbar-header[data-logobg='skin6'] .topbartoggler {
-    color: #3e5569;
+    color: #FFF;
 }
 
 #main-wrapper[data-layout='vertical'] .topbar .navbar-collapse[data-navbarbg='skin1'],
 #main-wrapper[data-layout='vertical'] .topbar[data-navbarbg='skin1'],
 #main-wrapper[data-layout='horizontal'] .topbar .navbar-collapse[data-navbarbg='skin1'],
 #main-wrapper[data-layout='horizontal'] .topbar[data-navbarbg='skin1'] {
-    background: #2962ff;
+    background: #5b6c9c;
 }
 
 #main-wrapper[data-layout='vertical'] .topbar .navbar-collapse[data-navbarbg='skin2'],
@@ -12783,22 +12766,22 @@ Preloader
 
 #main-wrapper[data-layout='vertical'] .left-sidebar[data-sidebarbg='skin6'],
 #main-wrapper[data-layout='horizontal'] .left-sidebar[data-sidebarbg='skin6'] {
-    background: #fff;
+    background: #5b6c9c;
 }
 
 #main-wrapper[data-layout='vertical'] .left-sidebar[data-sidebarbg='skin6'] .sidebar-nav ul,
 #main-wrapper[data-layout='horizontal'] .left-sidebar[data-sidebarbg='skin6'] .sidebar-nav ul {
-    background: #fff;
+    background: #5b6c9c;
 }
 
 #main-wrapper[data-layout='vertical'] .left-sidebar[data-sidebarbg='skin6'] .sidebar-nav ul .sidebar-item .sidebar-link,
 #main-wrapper[data-layout='horizontal'] .left-sidebar[data-sidebarbg='skin6'] .sidebar-nav ul .sidebar-item .sidebar-link {
-    color: #212529;
+    color: #FFF;
 }
 
 #main-wrapper[data-layout='vertical'] .left-sidebar[data-sidebarbg='skin6'] .sidebar-nav ul .sidebar-item .sidebar-link i,
 #main-wrapper[data-layout='horizontal'] .left-sidebar[data-sidebarbg='skin6'] .sidebar-nav ul .sidebar-item .sidebar-link i {
-    color: #4f5467;
+    color: #FFF;
 }
 
 #main-wrapper[data-layout='vertical'] .left-sidebar[data-sidebarbg='skin6'] .sidebar-nav ul .nav-small-cap,
@@ -13196,6 +13179,19 @@ Preloader
     padding: 0 15px;
     border: 0;
 }
+
+.navbarbg .top-header-nav {
+    display: flex;
+    flex: auto;
+    flex-direction: row-reverse;
+    list-style-type: none;
+    margin-left: 400px !important;
+}
+
+.navbarbg .top-header-nav li {
+    margin:0 10px;
+}
+
 
 .search-box .app-search {
     z-index: 110;
